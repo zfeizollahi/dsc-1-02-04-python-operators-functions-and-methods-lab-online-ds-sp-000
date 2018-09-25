@@ -20,7 +20,7 @@ def test_whisper_hey():
 
 def test_flatiorn_mantra():
     assert type(flatiorn_mantra) == type("HELLO, THERE"), "flatiorn_mantra must be a string"
-    assert flatiorn_mantra == "Learn. Love. Code", "Remember to put the string in title case"
+    assert flatiorn_mantra == "Learn. Love. Code.", "Remember to put the string in title case"
 
 def test_type_string():
     assert type_string == type("HELLO, THERE"), "type_string must be of type string"
@@ -31,7 +31,7 @@ def test_type_list():
     assert type(type_list) == type(dict) # another test to make sure the type list is returned. type() of a type returns type
 
 def test_lenght_of_list():
-    assert type(lenght_of_list) == type([]), "lenght_of_list must be a list"
+    assert type(lenght_of_list) == type(10), "lenght_of_list must be a list"
     assert lenght_of_list == 3, "lenght_of_list should contain only 3 elements"
 
 def test_longest_word_in_list():
