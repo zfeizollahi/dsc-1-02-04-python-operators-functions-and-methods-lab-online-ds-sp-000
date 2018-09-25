@@ -1,32 +1,152 @@
-# Object Orientation
 
-## Overview
+# Built-in Python Operators, Functions and Methods - Lab
 
-We'll introduce the concept of Object Oriented Programming (OOP)
+## Introduction
+We've looked at some of the built-in methods, functions, and the operators that python provides us with. These are all very powerful tools we can (and will) use in our code. Below, we'll put these new tools to use to solve the tests in this lab.
 
-## Object-Oriented Programming (OOP)
+## Objectives
+* Use base Python methods like `.append()`, `.upper()` and `.capitalize()`
+* Understand (simply) and explain what built in Python methods are
+* Understand, explain and use some base Python functions like `len()`, `type()`, `sum()`, `max()` and `min()`
+* Understand and explain what functions are and why they’re useful
+* Understand, explain and use Python comparison, logical, and identity operators
 
-*An object-oriented approach to application development makes programs more intuitive to design, faster to develop, more amenable to modification, and easier to understand.*  
-—[*Object-Oriented Programming with Objective-C*][apple_oop_guide_intro], Apple Inc.
+## Instructions
 
-[apple_oop_guide_intro]: https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/OOP_ObjC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005149-CH1-SW2
+Let's start out by using some built-in functions and methods. Employ the appropriate functions and methods to get the intended result.
 
-It's natural to wonder, "how can a string of ones and zeroes be referred to as an 'object'?" The use of the word "object" is an abstraction of thought. An "object" in code has no more physical form than does a word in any human language. Sure, words have physical representations: speaking a word causes air to vibrate in a sound wave, ink on a page can be shaped into symbols that represent the word, a meaning can be pointed at or mimed out; but none of these are the word itself. Human language is a system of abstraction: it communicates the *idea* of a thing, but not the thing itself.
 
-![](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)  
-Translation: "This is not a pipe." - [*The Treachery of Images*](https://en.wikipedia.org/wiki/The_Treachery_of_Images), [René Magritte](https://en.wikipedia.org/wiki/Ren%C3%A9_Magritte), 1927  
+```python
+yell_hello = "hello, there" # "HELLO, THERE"
+yell_hello
+```
 
-This image of a pipe is no more a pipe than the word "pipe" is a pipe; in the same way, a code object named `pipe` is not a pipe, but only another form of representing a pipe.
 
->As humans, we’re constantly faced with myriad facts and impressions that we must make sense of. To do so, we must abstract underlying structure away from surface details and discover the fundamental relations at work. Abstractions reveal causes and effects, expose patterns and frameworks, and separate what’s important from what’s not. Object orientation provides an abstraction of the data on which you operate; moreover, it provides a concrete grouping between the data and the operations you can perform with the data—in effect giving the data behavior.  
->—[*Object-Oriented Programming with Objective-C*](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/OOP_ObjC/Articles/ooOOP.html#//apple_ref/doc/uid/TP40005149-CH8-SW3), Apple Inc.
+```python
+whisper_hey = "PSST, HEY" # "psst, hey"
+whisper_hey
+```
 
-A code object representing a water pipe (instead of a smoking pipe) might contain values for `length`, `diameter`, `material`, and `manufacturer`. The bundling of these individual pieces of information together begins to form a larger whole.
 
-Object-Oriented Programming, however, does more than just bundle up individual pieces of data that represent a "thing" — it also bundles customized functions that can be performed *on* that data. These are called **methods**: behaviors that an object performs upon its internal data and even upon other code objects.
+```python
+flatiorn_mantra = "LEARN. LOVE. CODE." # "Learn. Love. Code"
+flatiorn_mantra
+```
 
-An object in code is a thing with all the data and all the logic required to complete a task. Objects are models and metaphors for the problems we solve in code.
 
-Object-oriented programming was born from the trend of making digital lives reflect our real lives. In the 1970's, [Adele Goldberg](https://en.wikipedia.org/wiki/Adele_Goldberg_%28computer_scientist%29) and [Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay) developed an object-oriented language at Xerox PARC called SmallTalk, which was used in the first personal computer.
+```python
+type_string = "i'm a string" # str
+type_string
+```
 
-Python comes with a few types of Objects to get us started, things like `int` for Integer, `str` for String, `list` for List, etc. We call these base types of Objects "Primitives." But what if we wanted to create a new type in our programming universe, a new kind of object for our code? That's what the `class` keyword and object orientation allows us to do.
+
+```python
+type_list = ["i'm", "a", "list"] # list
+type_list
+```
+
+
+```python
+lenght_of_list = ["i'm", "a", "list"] # 3
+lenght_of_list
+```
+
+
+```python
+longest_word_in_list = ["i'm", "a", "list"] # "list"
+longest_word_in_list
+```
+
+
+```python
+smallest_number = [1, 3, 4, 78] # 1
+smallest_number
+```
+
+
+```python
+sum_of_numbers = [1,2,3,5] # 11
+sum_of_numbers
+```
+
+Uncomment out the code in each cell as you start working on them. For example, when you begin on the first two examples in cell one, remove the first `#` on each line. Then, use the correct comparison operator to get the desired output, which you will find in a second comment at the end of the line feel free to remove this comment as well or keep it. Finally, Replace the `[COMPARISON]`, with the correct operator. See the example below.
+
+```python
+# boolean_compare = False [COMPARISON] True # True 
+=> boolean_compare = False != True # True
+OR
+=> boolean_compare = False != True
+```
+
+Once uncommented, you can run the tests to see if your comparisons are working the way we would like them to be.
+
+> **Remember** the comparison operators are: `==`, `!=`, `<`, `>`, `<=`, `>=`
+
+
+```python
+# boolean_compare = True [COMPARISON] True # False
+# boolean_compare2 = False [COMPARISON] True # False
+```
+
+
+```python
+# number_compare = 10 [COMPARISON] 10 # True
+# number_compare2 = -20 [COMPARISON] 30 # True
+# number_compare3 = 4 [COMPARISON] 5 # False
+```
+
+
+```python
+# string_compare = "stacy" [COMPARISON] "STACY" # True
+# string_compare2 = "hey i love python!" [COMPARISON] "hi love python" # False
+# string_compare3 = "this string is bigger than the other" [COMPARISON] "that is true" # True
+```
+
+In the next section, do not use either `==` or `!=` operators
+
+
+```python
+# list_compare = [0,0,0,0] [COMPARISON] [0,0,0] # True
+# list_compare2 = [1,0,0] [COMPARISON] [0,0,0] # True
+# list_compare3 = [0,0,0] [COMPARISON] [0,0,3] # False
+# list_compare4 = [0,0,3,0] [COMPARISON] [0,0,3] # True
+# list_compare5 = [0,0,4,0] [COMPARISON] [0,0,3] # False
+```
+
+### Practicing Identity and Logical Operators
+
+In this next section, use the identity and logical operators to get the desired output as you did in the examples above using the comparison operators.
+
+> **Remember:**
+the **logcial operators** are: `and`, `or`, & `not` and
+the **identity operators** are: `is` & `is not`
+
+Use logical opertors for this section
+
+
+```python
+# logical_compare = 2 [COMPARISON] [] # []
+# logical_compare2 = [COMPARISON] [] # True
+# logical_compare3 = 0 [COMPARISON] [] # 0
+# logical_compare4 = True [COMPARISON] 2 # 2
+# logical_compare5 = 2 [COMPARISON] 3 # 2
+# logical_compare6 = [COMPARISON] True # False
+# logical_compare7 = False [COMPARISON] 2 # False
+```
+
+Use identity opertors for this section
+
+
+```python
+# a = []
+# b = a
+# identity_compare = {} [COMPARISON] {} # False
+# identity_compare2 = a [COMPARISON] b # True
+# identity_compare3 = b [COMPARISON] [] # True
+# identity_compare4 = 9 [COMPARISON] 10 # True
+# identity_compare5 = "Same" [COMPARISON] "Same" # False
+# identity_compare6 = [1,3,4] [COMPARISON] [1,2,3] # False
+```
+
+# Summary
+Great work! After all that, there's nothing we can't compare, well I guess apples and oranges might still off the table. We practiced using comparison, logical, and identity operators in Python to compare elements of the same and different datatypes and or values. Going forward, there will be plenty of instances where we will need to compare elements. So, it is important to have a good understanding of how each of these operators works. Don't worry, as with all concepts in programming, the more we work with something the better we understand it. 
