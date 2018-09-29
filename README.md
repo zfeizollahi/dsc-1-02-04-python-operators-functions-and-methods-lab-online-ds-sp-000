@@ -2,9 +2,10 @@
 # Built-in Python Operators, Functions and Methods - Lab
 
 ## Introduction
-We've looked at some of the built-in methods, functions, and the operators that python provides us with. These are all very powerful tools we can (and will) use in our code. Below, we'll put these new tools to use to solve the tests in this lab.
+We've looked at some of the built-in methods, functions, and the operators that Python provides us with. These are all very powerful tools we can (and will) use in our code. Below, we'll put these new tools to use to solve the tests in this lab.
 
 ## Objectives
+You will be able to:
 * Use base Python methods like `.append()`, `.upper()` and `.capitalize()`
 * Understand (simply) and explain what built in Python methods are
 * Understand, explain and use some base Python functions like `len()`, `type()`, `sum()`, `max()` and `min()`
